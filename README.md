@@ -39,3 +39,29 @@ numberOfMenus INT,
 totalPrice BIGINT
 );
 ```
+
+
+
+
+Steps required to Create and Build Project
+
+
+2 tier / 3 tier architecture
+
+1) Presentation/ View Layer (UI / Frontent)
+2) Business / Application Layer (Backend)
+3) Persistence Layer (Database)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

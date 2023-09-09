@@ -1,6 +1,6 @@
 package com.bootcoding.project.utils;
 
-import com.bootcoding.restaurant.model.Vendor;
+import com.bootcoding.project.model.Vendor;
 
 import java.util.Random;
 
@@ -10,7 +10,7 @@ public class VendorBuilder {
 
     public static Vendor build() {
         Vendor vendor = new Vendor();
-        vendor.setVendorId(200 + random.nextInt(200));
+       // vendor.setVendorId(200 + random.nextInt(200));
         return vendor;
     }
 }

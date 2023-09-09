@@ -1,6 +1,7 @@
 package com.bootcoding.project.utils;
 
-import com.bootcoding.restaurant.model.Customer;
+
+import com.bootcoding.project.model.Customer;
 
 import java.util.Random;
 
@@ -9,7 +10,7 @@ public class CustomerBuilder {
 
     public static Customer build() {
         Customer customer = new Customer();
-        customer.setCustomerId(100 + random.nextInt(500));
+//        customer.setCustomerId(100 + random.nextInt(500));
         return customer;
     }
 }
