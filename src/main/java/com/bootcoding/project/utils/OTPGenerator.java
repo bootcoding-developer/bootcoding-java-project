@@ -4,34 +4,26 @@ import java.util.Random;
 
 public class OTPGenerator {
 
-    public int getOTP(){
-        Random random = new Random();
-        int minValue = 111111;
-        int maxValue = 999999;
+    final static int MAX = 999999;
+    final static int MIN = 100000;
+    static Random random = new Random();
 
-        return minValue + random.nextInt(maxValue - minValue);
-    }
-    public int getOTP4(){
-        Random random = new Random();
-        int minValue = 1111;
-        int maxValue = 9999;
-
-        return minValue + random.nextInt(maxValue - minValue);
+    // Naming Convntion - Kaam - Naam
+    public static int getRandomOTP() {
+        int number = random.nextInt(MAX - MIN); // 899999
+        int otp = MIN + number;
+        //System.out.println(" OTP Number = " + otp);
+        return otp;
     }
 
+    // Signature
+    // Implementation
+    // Calling - Invoation
 
     public static void main(String[] args) {
-        OTPGenerator otpGenerator = new OTPGenerator();
-        for(int i = 0; i< 100; i++){
-            int otp = otpGenerator.getOTP4();
-            System.out.println("OTP = " + otp);
+        for (int i = 0; i < 100; i++) {
+            OTPGenerator.getRandomOTP();
         }
-
-
-
-
-
-
-
     }
+
 }
